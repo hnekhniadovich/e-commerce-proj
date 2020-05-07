@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from "react-redux";
 import { createStructuredSelector } from 'reselect';
 
@@ -19,8 +18,8 @@ import {
 
 const Header = ({ currentUser, hidden }) => (
     <HeaderContainer>
-        <LogoContainer>
-            <Link to='/'><Logo /></Link>
+        <LogoContainer to='/'>
+            <Logo className='logo' />
         </LogoContainer>
         <OptionsContainer>
             <OptionLink to='/shop'>SHOP</OptionLink>
