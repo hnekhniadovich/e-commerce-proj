@@ -4,7 +4,7 @@ import { compose } from 'redux';
 
 import { selectIsCollectionsLoaded } from '../../redux/shop/shop.selectors';
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
-import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
+import CollectionsPage from './collection.component';
 
 const mapStateToProps = createStructuredSelector({
     isLoading: (state) => !selectIsCollectionsLoaded(state)
@@ -13,6 +13,6 @@ const mapStateToProps = createStructuredSelector({
 const CollectionPageContainer = compose(
     connect(mapStateToProps),
     WithSpinner
-)(CollectionsOverview);
+)(CollectionsPage);
 
 export default CollectionPageContainer;
