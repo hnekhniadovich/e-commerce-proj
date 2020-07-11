@@ -11,11 +11,12 @@
 * checkout with Stripe API
 
 ## Tools Used
-* HTML5
-* CSS3
-* JS
+* Firebase
+* Stripe
 * React
 * Redux
 * Redux Saga
 * Redux Persist
 * Axios
+* HTML5
+* CSS3
